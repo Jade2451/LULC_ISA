@@ -3,7 +3,8 @@ A simple machine learning -based classifier to differntiate between the differen
 
 This project performs a supervised land use and land cover (LULC) classification of Kolkata, India, using Sentinel-2 satellite imagery within the Google Earth Engine (GEE) platform. The objective is to map the urban landscape into distinct classes and analyze their spatial distribution.
 
-<img width="714" height="553" alt="image" src="https://github.com/user-attachments/assets/64e22f54-e0c1-4a5e-a67b-c7be0f59ddb4" />
+<img width="712" height="554" alt="image" src="https://github.com/user-attachments/assets/a3b8e4c7-70d6-4af3-a816-8b8f56bdd1e0" />
+
 
 ## Objective
 The primary goals of this analysis are:
@@ -19,7 +20,7 @@ The primary goals of this analysis are:
 
 * Area of Interest (AOI) Coordinates: A rectangular polygon defined by the corner points: [88.20, 22.45] and [88.50, 22.70].
 
-##Data and Methodology
+## Data and Methodology
 Data Source
 * Satellite: Sentinel-2 MSI (Level-2A Surface Reflectance)
 * Provider: Copernicus / European Space Agency (ESA)
@@ -27,7 +28,7 @@ Data Source
 * Date Range: January 1, 2024 - March 31, 2024
 * Cloud Cover Filter: Less than 10%
 
-##Methodology
+## Methodology
 The project follows a standard supervised classification workflow implemented entirely in Google Earth Engine:
 1. Define Area of Interest (AOI): A polygon is created to define the Kolkata study area.
 2. Image Collection: Sentinel-2 imagery is filtered by the AOI, date range, and cloud cover. A cloud-masked median composite image is generated.
@@ -40,7 +41,7 @@ The project follows a standard supervised classification workflow implemented en
 9. Accuracy Assessment: The model's performance is evaluated on the test set by generating a confusion matrix and calculating the Overall Accuracy and Kappa Coefficient.
 10. Area Calculation: The area for each LULC class is calculated by counting pixels and converting to square kilometers.
 
-##Key Results
+## Key Results
 * Overall Classification Accuracy: 88.2%
 
 * Kappa Coefficient: 0.82
